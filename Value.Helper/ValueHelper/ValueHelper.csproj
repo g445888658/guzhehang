@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADAE3300-4B26-462C-B1DE-FDACE3AAF58E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ValueHelper</RootNamespace>
+    <AssemblyName>ValueHelper</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DynamicLink\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileHelper\FileManager.cs" />
+    <Compile Include="FileHelper\OfficeHelper\AccessHelp.cs" />
+    <Compile Include="FileHelper\Windows\TextHelper.cs" />
+    <Compile Include="HotKeyHelper\HotKey.cs" />
+    <Compile Include="IIS\IISHelper.cs" />
+    <Compile Include="IIS\WebSiteInfo.cs" />
+    <Compile Include="Image\Infrastructure\Chain.cs" />
+    <Compile Include="Image\Infrastructure\FrequencyDimension.cs" />
+    <Compile Include="Image\Infrastructure\GrayscaleType.cs" />
+    <Compile Include="Image\Infrastructure\MedianFilterFrame.cs" />
+    <Compile Include="Image\Infrastructure\OperatorSet.cs" />
+    <Compile Include="Image\ValueImage.cs" />
+    <Compile Include="Image\ValueImagePart1.cs" />
+    <Compile Include="Image\ValueImagePart2.cs" />
+    <Compile Include="Infrastructure\ValueNode.cs" />
+    <Compile Include="Math\Infrastructure\SortMode.cs" />
+    <Compile Include="Math\ValueMath.cs" />
+    <Compile Include="OtherHelper\DateHelper.cs" />
+    <Compile Include="OtherHelper\JSONHelper.cs" />
+    <Compile Include="RegexHelper\ArgsHelper.cs" />
+    <Compile Include="RegexHelper\CommonRegex.cs" />
+    <Compile Include="RegeditHelper\Regedit.cs" />
+    <Compile Include="RegeditHelper\RegeditMethod.cs" />
+    <Compile Include="TDCodeHelper\BasicStruct\Converter.cs" />
+    <Compile Include="TDCodeHelper\BasicStruct\I2DCode.cs" />
+    <Compile Include="EncryptHelper\DESHelper.cs" />
+    <Compile Include="EncryptHelper\MD5Helper.cs" />
+    <Compile Include="EncryptHelper\QPHelper.cs" />
+    <Compile Include="FileHelper\FileBase\FileBase.cs" />
+    <Compile Include="FileHelper\OfficeHelper\ExcelHelper.cs" />
+    <Compile Include="FileHelper\OfficeHelper\WordHelper.cs" />
+    <Compile Include="Infrastructure\IKeyvalList.cs" />
+    <Compile Include="Infrastructure\KeyvalList.cs" />
+    <Compile Include="Infrastructure\SafeList.cs" />
+    <Compile Include="Infrastructure\ValueStack.cs" />
+    <Compile Include="MIMEHelper\Infrastructure\Attachment.cs" />
+    <Compile Include="MIMEHelper\Infrastructure\MIMEncrypt.cs" />
+    <Compile Include="MIMEHelper\Infrastructure\MIMEHead.cs" />
+    <Compile Include="MIMEHelper\Infrastructure\MIMEModel.cs" />
+    <Compile Include="MIMEHelper\Infrastructure\MIMEPrefix.cs" />
+    <Compile Include="MIMEHelper\Infrastructure\MIMETemplate.cs" />
+    <Compile Include="MIMEHelper\Serializer\DataSerializer.cs" />
+    <Compile Include="MIMEHelper\ValueMIME.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomHelper\Infrastructure\RandomType.cs" />
+    <Compile Include="RandomHelper\RandomHelper.cs" />
+    <Compile Include="OtherHelper\StringHelper.cs" />
+    <Compile Include="TDCodeHelper\BasicStruct\ModeType.cs" />
+    <Compile Include="TDCodeHelper\QR2DCodeHelper\Infrastructure\CodeMatrix.cs" />
+    <Compile Include="TDCodeHelper\QR2DCodeHelper\Infrastructure\ProperStruct.cs" />
+    <Compile Include="TDCodeHelper\QR2DCodeHelper\Serializer\DataSerializer.cs" />
+    <Compile Include="TDCodeHelper\QR2DCodeHelper\Serializer\ISerializer.cs" />
+    <Compile Include="TDCodeHelper\QR2DCodeHelper\Serializer\NumericSerializer.cs" />
+    <Compile Include="TDCodeHelper\QR2DCodeHelper\ValueSerializer.cs" />
+    <Compile Include="TDCodeHelper\QR2DCodeHelper\Value2DCode.cs" />
+    <Compile Include="DataBase\ValueDBHelper.cs" />
+    <Compile Include="ValueExtension\CharExtension.cs" />
+    <Compile Include="ValueSocket\Infrastructure\AsyncUserToken.cs" />
+    <Compile Include="ValueSocket\Infrastructure\BufferManager.cs" />
+    <Compile Include="ValueSocket\Infrastructure\ObjectState.cs" />
+    <Compile Include="ValueSocket\Infrastructure\ServerSetting.cs" />
+    <Compile Include="ValueSocket\Infrastructure\SocketAsyncEventrgsPool.cs" />
+    <Compile Include="ValueSocket\Infrastructure\SocketHandlers.cs" />
+    <Compile Include="ValueSocket\SocketBase\ServerBase.cs" />
+    <Compile Include="ValueSocket\SocketEvents\ReceiveEventArgs.cs" />
+    <Compile Include="ValueSocket\SocketEvents\SocketEventArgs.cs" />
+    <Compile Include="ValueSocket\ValueClient.cs" />
+    <Compile Include="ValueSocket\ValueServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
