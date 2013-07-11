@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="FileHelper\FileManager.cs" />
     <Compile Include="FileHelper\OfficeHelper\AccessHelp.cs" />
+    <Compile Include="FileHelper\OfficeHelper\ExcelHandler.cs" />
+    <Compile Include="FileHelper\OfficeHelper\ExcelHelper.cs" />
     <Compile Include="FileHelper\Windows\TextHelper.cs" />
     <Compile Include="HotKeyHelper\HotKey.cs" />
     <Compile Include="IIS\IISHelper.cs" />
@@ -80,7 +82,6 @@
     <Compile Include="EncryptHelper\MD5Helper.cs" />
     <Compile Include="EncryptHelper\QPHelper.cs" />
     <Compile Include="FileHelper\FileBase\FileBase.cs" />
-    <Compile Include="FileHelper\OfficeHelper\ExcelHelper.cs" />
     <Compile Include="FileHelper\OfficeHelper\WordHelper.cs" />
     <Compile Include="Infrastructure\IKeyvalList.cs" />
     <Compile Include="Infrastructure\KeyvalList.cs" />
